@@ -1,0 +1,119 @@
+.h1Heading{
+    text-align: center;
+    color: #0072c6;
+    padding: 2rem;
+}
+.histogram{
+    padding: 0% 5%;
+}
+.button{
+    /* color:#000; */
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px;
+	margin: 40px;
+    width: 25%;
+	text-decoration: none;
+    /* border: 2px solid #0c569c; */
+    border: none;
+    outline: none;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #239ce2, #0c569c);
+}
+/* .button::before{
+    content: "";
+    background-image: conic-gradient(
+        #ff0052 20deg,
+        transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+.button::after{
+    content: "Apply Now";
+    width: 190px;
+    height: 190px;
+    background: #101010;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff0052;
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+} */
+.button:hover{
+    transform: translateY(10px);
+    background: linear-gradient(to right,#4081be,#5a92c6) ;
+}
+
+
+.tables{
+    padding: 5rem;
+    display: flex; 
+    justify-content: space-between;
+    /* ============================================================aish */
+    gap:1rem;
+}
+.topData{
+    box-shadow: 0px 0px 5px rgb(162, 162, 162);
+    padding: 1rem 2rem;
+}
+table{
+    /* border: 2px solid black; */
+    width: 35rem;
+    margin: auto;
+    text-align: center;
+}
+table td, table th{
+    /* border: 2px solid black; */
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+table tr:nth-child(even){
+    background-color: lightgrey;
+}
+table th{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    background-color: #0072c6;
+}
+.countryData{
+    height: 22rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 5px rgb(162, 162, 162);
+    padding: 1rem 2rem;
+}
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#90e0ef), to(#0077b6));
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
+  }
+
+  /* ============================================================aish */
+  @media screen and (max-width: 1000px) {
+    .tables{
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,65 @@
+
+.modalBackdrop{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.7);
+}
+
+.modal{
+    padding: 30px;
+    max-width:480px;
+    margin:8rem auto;
+    background:#fff;
+    border-radius: 10px;;
+}
+.modal span{
+    font-size: 1.1rem;
+    color: rgb(1, 1, 90);
+    font-weight: bold;
+}
+.cross_container{
+    display: flex;
+    justify-content: flex-end;
+}
+.cross_container button{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.2rem;
+}
+.modal input{
+    padding: .5rem;
+    border-radius: 3px;
+    width: 80%;
+    border: 1px solid navy;
+}
+.aplicationBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aplicationBtn button{
+    padding: .7rem 1.7rem;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background: linear-gradient(to right,rgb(53, 53, 142),white,rgb(53, 53, 142));
+    background-size: 400% 100%;
+    transition: all 0.5s ease-in-out;
+}
+.aplicationBtn button:hover{
+    background-position: 100% 0%;
+}
+.aplicationBtn button:active{
+    background:rgb(94, 94, 162) ;
+}
+
+
+
+
+  

@@ -1,0 +1,205 @@
+/* .codingHeading {
+    text-align: center;
+    background-color: white;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.codingHeading p{
+  color: black;
+  font-size: 60px;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+      top: -360px;
+     
+    }
+  }
+  .codingHeading p span{
+    position: relative;
+   margin: 5rem 0;
+  line-height: 90px;
+  }
+  .codingHeading p span::after{
+    content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-left: 2px solid skyblue;
+  animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  } */
+.codingHeading {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  overflow: hidden;
+  position: sticky;
+  top: 6.5rem;
+  z-index: 1000;
+}
+
+.codingText {
+  position: relative;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.codingText::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-left: 2px solid navy;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+
+  40%,
+  60% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.codingplatformContainer {
+  padding-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  background: linear-gradient(to right, rgb(55, 58, 112), rgb(46, 74, 145), rgb(93, 127, 212));
+}
+
+.codingplatform {
+  width: 25%;
+  height: 40vh;
+  box-shadow: 0px 0px 5px black;
+  padding: 1rem;
+  background-color: white;
+  text-decoration: none;
+  list-style: none;
+  border-radius: 10px;
+  color: #01285b;
+}
+
+.codingplatform:hover {
+  border: 3px solid black;
+}
+
+.codingplatform:active {
+  color: black
+}
+
+.platfrmName {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.platfrmImg {
+  width: 100%;
+  height: 25vh;
+}
+
+/*----------------------------------------CONTEST PAGE----------------------------------------------------- */
+
+.contest_heading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #01285b, #032f6a, #033d89, #05479e);
+  color: white;
+}
+
+.contest_heading span {
+  font-size: 3rem;
+  background-image: linear-gradient(90deg, rgb(231, 79, 231), white, #5b95bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contest_box_container {
+  padding: 1rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to right, #01285b, #032f6a, #033d89, #05479e);
+}
+
+.contest_box {
+  width: 25%;
+  height: 60vh;
+  overflow: auto;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 5px rgb(194, 190, 190);
+}
+
+.contest_box::-webkit-scrollbar {
+  display: none;
+}
+
+.contest_box h1 {
+  color: purple;
+}
+
+.contest_box h2 {
+  text-align: center;
+  color: blueviolet;
+}
+
+.contestBtn {
+  border: none;
+  outline: none;
+  padding: .7rem 1.5rem;
+  background-color: rgb(55, 98, 208);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.contestBtn:hover {
+  background-color: rgb(4, 36, 118);
+}
+
+.contestBtn:active {
+  background-color: rgb(55, 98, 208);
+}

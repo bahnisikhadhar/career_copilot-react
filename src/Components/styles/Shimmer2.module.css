@@ -1,0 +1,36 @@
+.shimmerContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem 2rem;
+    padding: 3rem;
+  }
+  
+  .cardShimmer {
+    width: 22%;
+    height: 50vh;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(216, 215, 215) ;
+    position: relative;
+  }
+  .cardShimmerUp{
+    height: 10vh;
+    background-color: rgb(216, 215, 215);
+    margin-bottom: 2rem;
+  }
+  .cardshimmermiddle{
+    height: 10vh;
+    background-color: rgb(216, 215, 215);
+  }
+  .shimmerbtn{
+    position: absolute;
+    bottom: 1rem;
+    left: 15%;
+    padding: 1.5rem 7rem;
+    background-color: rgb(216, 215, 215);
+  }
+  
+  

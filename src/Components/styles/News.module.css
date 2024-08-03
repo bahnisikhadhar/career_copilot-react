@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+.newsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e9f0f7;
+  }
+  
+  .newsCard {
+    box-shadow: 0px 0px 10px 0px #000c19;
+    border-radius: 5px;
+    margin: 20px;
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+  }
+  .newsCard:hover {
+    box-shadow: 0px 0px 10px 0px #0b4a8b;
+   
+  }
+  .newsCard img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .newsCard h2 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .newsCard h3 {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .newsCard p {
+    margin: 10px;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .newsCard h2:first-of-type {
+    margin-top: 0;
+  }
+  
+  .newsCard h2:last-of-type {
+    margin-bottom: 0;
+  }
+  .publish{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .publish p{
+    font-size: 1rem;
+  }
+  @media (max-width: 768px) {
+    .newsCard {
+      max-width: 100%;
+    }
+  }
+  
+  .newspageHeading {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #0b4a8b;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+  }
+  
